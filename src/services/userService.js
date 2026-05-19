@@ -5,7 +5,7 @@ const registeruser = async (data) =>{
 };
 
 const fetchUsers = async () =>{
-    return await userRepository.getUsers();
+    return await userRepository.getusers();
 };
 
 module.exports = {

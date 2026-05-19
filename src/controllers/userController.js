@@ -3,10 +3,10 @@ const userService = require("../services/userService");
 
 const createUser = async (req, res) =>{
     try{
-        const user = await userService.registerUser(req.body);
+        const user = await userService.registeruser(req.body);
         res.status(201).json(user);
         //print the output
-        console.log(user);
+        console.log(req.body);
     } catch(error){
         res.status(500).json({
             message: error.message,
